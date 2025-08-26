@@ -1,26 +1,23 @@
-import { useState } from 'react'
-import './App.css'
-import { Button } from '@/components/ui/button'
-import logoLobos from './assets/logoLobos.jpg'
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import HomePage from "./routes/Inicio"
+import ExperienciasPage from "./routes/Experiencias"
+import MapaPage from "./routes/Mapa"
+import FavoritosPage from "./routes/Favoritos"
+import Navbar from "./components/navbar"
 
 function App() {
   return (
-    <>
-    <div className='flex flex-col items-center justify-center'>
-      <div className='flex justify-center'>
-        <a href="" target="_blank">
-          <img src={logoLobos} className="w-1/2 mx-auto" alt="logoLobos+" />
-        </a>
+    <Router>
+      <div className="min-h-screen pb-16 bg-gray-50">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/experiencias" element={<ExperienciasPage />} />
+          <Route path="/mapa" element={<MapaPage />} />
+          <Route path="/favoritos" element={<FavoritosPage />} />
+        </Routes>
+        <Navbar />
       </div>
-      <div className="flex justify-center p-2">
-        <Button variant={'secondary'}>Mas informacion</Button>
-      </div>
-      <p className='text-center text-2xl font-light text-red-500'>
-        Proximamente...a la palma de tu mano
-      </p>
-      </div>
-    </>
+    </Router>
   )
 }
 
