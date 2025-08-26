@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 bg-[#132637] text-white z-50 px-4 py-3 flex justify-between items-center">
-                 {/* Botón hamburguesa */}
+          {/* Botón hamburguesa */}
          <Menu
            className="text-white hover:bg-white/10 rounded transition-colors"
            onClick={toggleMenu}
@@ -41,7 +41,7 @@ export default function Header() {
         </Button>
       </header>
 
-             {/* Menú desplegable */}
+       {/* Menú desplegable */}
        <div
          className={`fixed inset-0 bg-[#EFEADF] bg-opacity-50 z-40 transition-opacity duration-300 ease-out ${
            isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
