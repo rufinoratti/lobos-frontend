@@ -6,24 +6,38 @@ export default function ExperienciasPage() {
       <PageTransition>
         <div className="min-h-screen bg-[#F5F2EE] pt-20">
         <main className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-regular text-black mb-4">experiencias</h1>
-          </div>
           <div className='space-y-6'>
-            
+            {/* Categoria Sabores Lobenses */}
             <CategoryCard
               title="Sabores Lobenses"
               description="Sabores locales, bodegones con historia y nuevas propuestas para disfrutar."
               image="/saboresLobenses.png"
-              href="/experiencias/outdoor"
+              href="/experiencias/sabores-lobenses"
               buttonText="Explorar mas"
             />
+            {/* Categoria Paseo de Estilo */}
             <CategoryCard
-              title="Gastronomía Local"
-              description="Descubre los sabores auténticos de la región con experiencias culinarias únicas."
-              image="/images/food.jpg"
-              href="/experiencias/gastronomia"
-              buttonText="Explorar sabores"
+              title="Paseo de Estilo"
+              description="Ropa, deco y estilo con identidad propia. El paseo ideal para inspirarte y llevarte algo."
+              image="/paseoDeEstilo.png"
+              href="/experiencias/paseo-de-estilo"
+              buttonText="Explorar mas"
+            />
+            {/* Categoria Escena Local */}
+            <CategoryCard
+              title="Escena Local"
+              description="Todo lo que está pasando en Lobos, en un solo lugar."
+              image="/eventos.png"
+              href="/experiencias/alojamientos"
+              buttonText="Explorar mas"
+            />  
+            {/* Categoria Profesionales */}
+            <CategoryCard
+              title="Profesionales"
+              description="Encuentra el lugar perfecto para tu estadía en Lobos, desde acogedores B&B hasta hoteles boutique."
+              image="/profesionales.png"
+              href="/experiencias/escena-local"
+              buttonText="Explorar mas"
             />
           </div>
           </main>
