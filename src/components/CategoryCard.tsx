@@ -17,25 +17,27 @@ export default function CategoryCard({
   buttonText = "Explorar más",
 }: CategoryCardProps) {
   return (
-    <div className="bg-white rounded-3xl shadow-lg p-6 flex items-center gap-6 hover:shadow-xl transition-shadow duration-300 w-full max-w-md mx-auto">
-      <div className="flex-shrink-0 w-24 h-24">
+    <div className="bg-white rounded-3xl shadow-lg p-4 flex items-center gap-4 hover:shadow-xl transition-shadow duration-300 w-[365px] h-[175px] mx-auto">
+      <div className="flex-shrink-0 w-32 h-32">
         <div className="w-full h-full rounded-full overflow-hidden">
           <img
             src={image || "/placeholder.svg"}
             alt={title}
-            width={96}
-            height={96}
+            width={128}
+            height={128}
             className="w-full h-full object-cover"
           />
         </div>
       </div>
 
-      <div className="flex-1 min-w-0 flex flex-col justify-center">
-        <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">{title}</h3>
-        <p className="text-gray-600 text-base leading-relaxed mb-4 line-clamp-3">{description}</p>
+      <div className="flex-1 min-w-0 flex flex-col justify-between items-center text-center h-full py-3">
+        <div className="flex flex-col items-center">
+          <h3 className="text-lg font-bold text-gray-900 mb-2 leading-tight">{title}</h3>
+          <p className="text-gray-500 text-sm leading-relaxed line-clamp-2">{description}</p>
+        </div>
 
         <Link to={href}>
-          <button className="bg-amber-100 hover:bg-amber-200 text-gray-800 font-medium px-6 py-3 rounded-full transition-colors duration-200 text-base border border-amber-200">
+          <button className="bg-[#CCB999] hover:bg-[#B8A888] text-gray-800 font-medium rounded-full transition-colors duration-200 text-sm border border-black w-[130px] h-[25px] flex items-center justify-center">
             {buttonText}
           </button>
         </Link>
