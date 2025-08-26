@@ -4,11 +4,13 @@ import ExperienciasPage from "./routes/Experiencias"
 import MapaPage from "./routes/Mapa"
 import FavoritosPage from "./routes/Favoritos"
 import Navbar from "./components/navbar"
+import Header from "./components/header"
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen pb-16 bg-gray-50">
+        <Header/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/experiencias" element={<ExperienciasPage />} />
