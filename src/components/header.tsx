@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { useNavigate } from "react-router-dom"
-import logoLobos from "../assets/lobosLogo.png"
 import { Button } from "@/components/ui/button" // tu Button shadcn
 
 export default function Header() {
@@ -25,8 +24,8 @@ export default function Header() {
 
         {/* Logo centrado */}
         <div className="flex-1 flex flex-col items-center">
-          <img src={logoLobos} alt="Logo" className="h-10 mb-1" />
-          <p className="text-sm font-normal">a la palma de tu mano</p>
+          <img src="/logoLobosBlanco.png" alt="Logo" className="h-10 mb-1 " />
+          <p className="text-sm font-bold">a la palma de tu mano</p>
         </div>
 
         {/* Botón perfil */}
