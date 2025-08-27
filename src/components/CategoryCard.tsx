@@ -17,7 +17,7 @@ export default function CategoryCard({
   buttonText = "Explorar más",
 }: CategoryCardProps) {
   return (
-  <div className="bg-white rounded-3xl p-4 flex items-center gap-4 hover:shadow-xl active:scale-[0.97] active:shadow-2xl transition-all duration-200 w-[365px] mx-auto touch-manipulation shadow-8px_8px_100px_0px_rgba(1000,100,100,0.13)]">
+    <div className="bg-white rounded-3xl p-4 flex items-center gap-4 active:scale-[0.97] active:shadow-2xl transition-all duration-200 w-[365px] mx-auto touch-manipulation shadow-[8px_16px_32px_0px_rgba(80,80,80,0.28)]">
       <div className="flex-shrink-0 w-32 h-32">
         <div className="w-full h-full rounded-full overflow-hidden">
           <img

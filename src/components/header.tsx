@@ -14,13 +14,23 @@ export default function Header() {
     <>
       <header className="fixed top-0 left-0 right-0 bg-[#132637] text-white z-50 px-4 py-3 flex justify-between items-center">
           {/* Botón hamburguesa */}
-         <Menu
-           className="text-white hover:bg-white/10 rounded transition-colors"
-           onClick={toggleMenu}
-           aria-label="Abrir menú"
-         >
-           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-         </Menu>
+
+        {/* Botón hamburguesa o X */}
+        {!isMenuOpen ? (
+          <Menu
+            className="text-white hover:bg-white/10 rounded transition-colors"
+            onClick={toggleMenu}
+            aria-label="Abrir menú"
+            size={28}
+          />
+        ) : (
+          <X
+            className="text-white hover:bg-white/10 rounded transition-colors"
+            onClick={toggleMenu}
+            aria-label="Cerrar menú"
+            size={28}
+          />
+        )}
 
         {/* Logo centrado */}
         <div className="flex-1 flex flex-col items-center">

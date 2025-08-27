@@ -28,7 +28,7 @@ export default function ExperienciasPage() {
               title="Escena Local"
               description="Todo lo que está pasando en Lobos, en un solo lugar."
               image="/eventos.png"
-              href="/experiencias/alojamientos"
+              href="/experiencias/escena-local"
               buttonText="Explorar mas"
             />  
             {/* Categoria Profesionales */}
@@ -36,7 +36,7 @@ export default function ExperienciasPage() {
               title="Profesionales"
               description="Encuentra el lugar perfecto para tu estadía en Lobos, desde acogedores B&B hasta hoteles boutique."
               image="/profesionales.png"
-              href="/experiencias/escena-local"
+              href="/experiencias/profesionales"
               buttonText="Explorar mas"
             />
           </div>
