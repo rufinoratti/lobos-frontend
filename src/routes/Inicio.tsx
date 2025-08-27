@@ -42,6 +42,9 @@ export default function HomePage() {
               href="/profesionales" 
               />
           </div>
+          <div className="py-5">
+            <h2 className="text-2xl text-black mb-4">Que hacer en lobos?</h2>
+          </div>
         </div>
       </main>
     </div>

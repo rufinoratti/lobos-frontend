@@ -9,7 +9,7 @@ interface ImageCarouselProps {
   autoSlideInterval?: number
 }
 
-export default function ImageCarousel({ images, autoSlide = true, autoSlideInterval = 2000 }: ImageCarouselProps) {
+export default function ImageCarousel({ images, autoSlide = true, autoSlideInterval = 3000 }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const nextSlide = () => {
@@ -35,7 +35,7 @@ export default function ImageCarousel({ images, autoSlide = true, autoSlideInter
 
   return (
     <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg group">
-      {/* Images */}
+      {/* Imagenes */}
       <div className="relative w-full h-full">
         {images.map((image, index) => (
           <div
@@ -71,7 +71,7 @@ export default function ImageCarousel({ images, autoSlide = true, autoSlideInter
         </>
       )}
 
-      {/* Dots Indicator */}
+      {/* Circulos indicadores*/}
       {images.length > 1 && (
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
           {images.map((_, index) => (
@@ -79,7 +79,7 @@ export default function ImageCarousel({ images, autoSlide = true, autoSlideInter
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex ? "bg-white scale-125" : "bg-white/50 hover:bg-white/75"
+                index === currentIndex ? "bg-[#132637] scale-100" : "bg-white/50 hover:bg-white/75"
               }`}
             />
           ))}
