@@ -3,6 +3,7 @@ import HomePage from "./routes/Inicio"
 import ExperienciasPage from "./routes/Experiencias"
 import MapaPage from "./routes/Mapa"
 import FavoritosPage from "./routes/Favoritos"
+import SaboresLobensesPage from "./routes/SaboresLobenses"
 import Navbar from "./components/navbar"
 import Header from "./components/header"
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/experiencias" element={<ExperienciasPage />} />
           <Route path="/mapa" element={<MapaPage />} />
           <Route path="/favoritos" element={<FavoritosPage />} />
+          <Route path="/experiencias/sabores-lobenses" element={<SaboresLobensesPage />} />
         </Routes>
         <Navbar />
       </div>
