@@ -1,5 +1,6 @@
 
 import CategoryButton from "@/components/CategoryButton"
+import { Utensils, Shirt, Calendar, Briefcase } from "lucide-react"
 import InicioCarousel from "@/components/InicioCarousel"
 import PageTransition from "@/components/PageTransition"
 import InfoMap from "@/components/InfoMap"
@@ -28,21 +29,21 @@ export default function HomePage() {
           <div className="grid grid-cols-4 gap-4">
 
             <CategoryButton title="Gastronomía" 
-              image="/imagenIconos/iconoCubiertos.png" 
-              href="/sabores-lobenses"
-              />
+              icon={<Utensils size={40} />} 
+              href="/experiencias/sabores-lobenses"
+            />
             <CategoryButton title="Moda" 
-              image="/imagenIconos/iconoModa.png"  
+              icon={<Shirt size={40} />}  
               href="/paseo-de-estilo"
-               />
+            />
             <CategoryButton title="Eventos" 
-             image="/imagenIconos/iconoEventos.png" 
-             href="/eventos"
-              />
+              icon={<Calendar size={40} />} 
+              href="/eventos"
+            />
             <CategoryButton title="Profesionales" 
-              image="/imagenIconos/iconoProfesional.png" 
+              icon={<Briefcase size={40} />} 
               href="/profesionales" 
-              />
+            />
           </div>
           </div>
           </div>

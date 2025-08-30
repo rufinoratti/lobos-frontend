@@ -25,7 +25,7 @@ export default function SaboresLobensesPage() {
                 title="La Porteña"
                 address="Salgado y Junin"
                 category="Confiteria"
-                instagramUrl="hoa"
+                instagramUrl="www.instagram.com"
                 whatsappUrl="hola"
             />
           </div>
