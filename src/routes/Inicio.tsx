@@ -1,8 +1,8 @@
-import SearchBar from "@/components/SearchBar"
+
 import CategoryButton from "@/components/CategoryButton"
 import InicioCarousel from "@/components/InicioCarousel"
-import CardPlace from "@/components/CardPlace"
 import PageTransition from "@/components/PageTransition"
+import InfoMap from "@/components/InfoMap"
 
 export default function HomePage() {
   const lobosImages = [
@@ -13,9 +13,10 @@ export default function HomePage() {
 
   return (
     <PageTransition>
-    <div className="min-h-screen bg-[#F5F2EE]">
-      <main className="px-4 pt-30">
-        <SearchBar placeholder="Explorar Lobos" />
+      <div className="min-h-screen bg-[#F5F2EE]">
+        {/* Mantener solo padding-top en main: padding horizontal se aplicará por secciones */}
+        <main className="pt-25">
+          <div className="px-4">
 
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Descubre tu semana</h2>
@@ -43,19 +44,18 @@ export default function HomePage() {
               href="/profesionales" 
               />
           </div>
-          <div className="py-5">
-            <h2 className="text-2xl text-black mb-4">Que hacer en lobos?</h2>
-            <CardPlace
-              imageUrl="/imagenIconos/imagenCardPlace.png"
-              title="El Escritorio"
-              address="9 de Julio, 57"
-              category="RestoBar"
-            />
+          </div>
           </div>
 
-        </div>
-      </main>
-    </div>\
+          {/* InfoMap se coloca fuera del contenedor con px-4 para ser full-bleed */}
+          <div>
+            <InfoMap />
+          </div>
+
+          <div className="px-4">
+          </div>
+        </main>
+      </div>
     </PageTransition>
   )
 }
