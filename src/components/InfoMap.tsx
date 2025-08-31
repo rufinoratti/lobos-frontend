@@ -12,8 +12,8 @@ const InfoMap = () => {
     <div style={fullBleedStyle} className="shadow-lg border overflow-hidden flex flex-row h-60">
       {/* Panel izquierdo: información y acción */}
       <div className="w-1/2 bg-white p-4 flex flex-col justify-center">
-        <h1 className="text-2xl font-bold">🌎 Tu guia en lobos</h1>
-        <p className="text-gray-600 mt-2">Descubrí tiendas y lugares cercanos.</p>
+        <h1 className="text-2xl font-bold text-center">🌎 Tu guia en lobos</h1>
+        <p className="text-gray-600 mt-2 text-center">Descubrí tiendas y lugares cercanos.</p>
 
           {/* Botón: diseño más minimalista y redondeado */}
           <Link

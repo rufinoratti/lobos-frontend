@@ -34,7 +34,7 @@ export default function ExperienciasPage() {
             {/* Categoria Profesionales */}
             <CategoryCard
               title="Profesionales"
-              description="Encuentra el lugar perfecto para tu estadía en Lobos, desde acogedores B&B hasta hoteles boutique."
+              description="loren ipsum"
               image="/profesionales.png"
               href="/experiencias/profesionales"
               buttonText="Explorar mas"
